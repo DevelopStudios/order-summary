@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+      .feature__body {
+        background: #E0E8FF;
+      }
+      .top-banner__image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+      }
+      .top-banner__image img {
+        width: 100%;
+      }
+      .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+      }
+      .card {
+        background: white;
+        width: 450px;
+        height: 679px;
+        z-index: 9999;
+        position: relative;
+        border-radius: 20px;
+      }
+      .card .feature__image {
+        background-image: url('./images/illustration-hero.svg');
+        height: 220px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+      }
+      .card h3 {
+        font-family: Red Hat Display;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 37px;
+        text-align: center;
+      }
+      .card p {
+        font-family: Red Hat Display;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #717FA6;
+        padding: 0 15%;
+      }
+      .card .feature__container {
+        background: #F7F9FF;
+        display: flex;
+        max-width: 354px;
+        margin: 0 auto;
+        padding: 25px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 32px;
+      }
+      .card .feature__container .plan {
+        width: 200px;
+      }
+      .card .feature__container .plan h3 {
+        font-family: Red Hat Display;
+        font-style: normal;
+        text-align: left;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 21px;
+        color: #1F2E55;
+        margin: 0;
+      }
+      .card .feature__container .plan p {
+        font-family: Red Hat Display;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: #717FA6;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+      }
+      .card .feature__container button.change {
+        font-family: Red Hat Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        text-decoration-line: underline;
+        color: #382AE1;
+        background: transparent;
+        border: none;
+      }
+      .card .feature__container button.change:hover {
+        cursor: pointer;
+      }
+      .card .button_container {
+        max-width: 354px;
+        margin: 0 auto;
+      }
+      .card .button_container button.proceeed {
+        background: #382AE1;
+        box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+        border-radius: 11px;
+        color: #fff;
+        padding: 15px 0;
+        border: none;
+        box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+      }
+      .card .button_container button.proceeed:hover {
+        cursor: pointer;
+        background: #766CF1;
+      }
+      .card .button_container button.cancel {
+        padding: 15px 0;
+        background: transparent;
+        border: none;
+        margin-top: 20px;
+      }
+      .card .button_container button.cancel:hover {
+        cursor: pointer;
+      }
+      .card .button_container {
+          display: grid;
+      }
+  </style>
+</head>
+<body class="feature__body">
+<div class="top-banner__image">
+  <img src="./images/pattern-background-desktop.svg" alt="">
+</div>
+<div class="card-container">
+  <div class="card">
+    <div class="feature__image">
+    </div>
+    <div class="content-body">
+      <h3>
+        Order Summary
+      </h3>
+      <p>
+        You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+      </p>
+      <div class="feature__container">
+        <div class="icon">
+          <img src="./images/icon-music.svg" alt="">
+        </div>
+        <div class="plan">
+          <h3>Annual Plan</h3>
+          <p>$59.99/year</p>
+        </div>
+        <div class="button">
+          <button class="change">
+            Change
+          </button>
+        </div>
+      </div>
+      <div class="button_container">
+          <button class="proceeed">Proceed to Payment</button>
+          <button class="cancel">Cancel Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
